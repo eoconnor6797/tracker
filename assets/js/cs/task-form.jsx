@@ -9,6 +9,7 @@ function TaskForm(props) {
     function update(ev) {
         let tgt = $(ev.target);
         let data = {};
+        //borrowed from piazza
         if (tgt.attr('name') == "completed") {
             data["completed"] = $(tgt).is(':checked') ? 'true' : 'false';
         } else {
